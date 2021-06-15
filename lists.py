@@ -34,7 +34,7 @@ def main():
 
     # make sure the users num can be an integer
     try:
-        user_num = int(user_num)
+        user_num = float(user_num)
         # check that its bigger than 0 and less than 100
         # and that its not a decimal
         if (user_num > 100):
@@ -62,7 +62,7 @@ def main():
             num_too_small = False
             decimal = False
             try:
-                user_num = int(user_num)
+                user_num = float(user_num)
                 if (user_num > 100):
                     print("Number can not be more than 100")
                     num_too_big = True
